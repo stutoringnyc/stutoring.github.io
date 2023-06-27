@@ -1,5 +1,11 @@
+body {
+  /* overflow: hidden; */
+  background-color: rgb(241, 232, 227);
+}
+
 .App {
-  text-align: center;
+  /* text-align: center; */
+  background-color: rgb(241, 232, 227);
 }
 
 .App-logo {
@@ -35,4 +41,251 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.calendly {
+  width: 100vw;  
+  height: 110vh;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+}
+
+@media only screen and (min-width: 768px) {
+  .ui.container {
+    width: 700px;
+    max-width: 700px;
+  }
+
+  nav.ui.container .ui.header {
+    float: left;
+    margin-top: 12px;
+  }
+
+  nav.ui.container .ui.inverted.compact.menu {
+    float: right;
+  }
+}
+
+.ui.inverted.vertical.center.aligned.segment {
+  padding-top: 36px;
+}
+
+nav.ui.container .ui.inverted.compact.menu {
+  background-color: rgb(51, 51, 51);
+}
+
+nav.ui.container .ui.inverted.compact.menu .item {
+  padding-bottom: 0;
+}
+
+nav.ui.container .ui.inverted.compact.menu .item {
+  font-size: 16px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 14px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 0;
+}
+
+nav.ui.container .ui.inverted.compact.menu .active.item {
+  background-color: inherit;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+/* .ui.inverted.vertical.segment {
+  height: 100%;
+  background-color: rgb(51, 51, 51);
+} */
+
+.ui.content.container {
+  height: 300px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.ui.content.container h1.header {
+  width: 20vw;
+  height: 5vh;
+}
+
+.ui.content.container p {
+  font-size: 21px;
+  line-height: 1.6;
+  font-weight: 300;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ui.inverted.vertical.segment footer.ui.segment {
+  width: 100%;
+  bottom: 0;
+  color: white;
+}
+
+.secret {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 2;
+  margin: auto;
+}
+
+.secret form {
+  margin: auto;
+  margin-top: 45vh;
+  align-items : center;
+  vertical-align: middle;
+  text-align: center;
+  -ms-transform: center;
+  transform: center;
+  z-index: 5;
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
+@keyframes movement {
+  0% {
+    transform: translateY(-50%) translateX(-50%) rotate(40deg) translateX(-20%);
+  }
+  25% {
+    transform: translateY(-50%) translateX(-50%) skew(15deg, 15deg) rotate(
+        110deg
+      )
+      translateX(-5%);
+  }
+  50% {
+    transform: translateY(-50%) translateX(-50%) rotate(210deg) translateX(-35%);
+  }
+  75% {
+    transform: translateY(-50%) translateX(-50%) skew(-15deg, -15deg) rotate(
+        300deg
+      )
+      translateX(-10%);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-50%) rotate(400deg) translateX(-20%);
+  }
+}
+
+@keyframes movement2 {
+  100% {
+    transform: translateY(-50%) translateX(-50%) rotate(40deg) translateX(-20%);
+  }
+  75% {
+    transform: translateY(-50%) translateX(-50%) skew(15deg, 15deg) rotate(
+        110deg
+      )
+      translateX(-5%);
+  }
+  50% {
+    transform: translateY(-50%) translateX(-50%) rotate(210deg) translateX(-35%);
+  }
+  25% {
+    transform: translateY(-50%) translateX(-50%) skew(-15deg, -15deg) rotate(
+        300deg
+      )
+      translateX(-10%);
+  }
+  0% {
+    transform: translateY(-50%) translateX(-50%) rotate(400deg) translateX(-20%);
+  }
+}
+
+@keyframes movement3 {
+  50% {
+    transform: translateY(-50%) translateX(-50%) rotate(40deg) translateX(-20%);
+  }
+  75% {
+    transform: translateY(-50%) translateX(-50%) skew(15deg, 15deg) rotate(
+        110deg
+      )
+      translateX(-5%);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-50%) rotate(210deg) translateX(-35%);
+  }
+  0% {
+    transform: translateY(-50%) translateX(-50%) skew(-15deg, -15deg) rotate(
+        300deg
+      )
+      translateX(-10%);
+  }
+  25% {
+    transform: translateY(-50%) translateX(-50%) rotate(400deg) translateX(-20%);
+  }
+}
+
+#container {
+  overflow: hidden;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#color-one {
+  opacity: 0.3;
+  width: 70vw;
+  height: 60vw;
+  position: absolute;
+  background-color: green;
+  filter: blur(100px);
+  border-radius: 99999px;
+  display: inline;
+  animation: movement infinite 40s;
+  top: 0;
+  left: 40vw;
+}
+
+#color-two {
+  opacity: 0.2;
+  width: 70vw;
+  height: 50vw;
+  position: absolute;
+  display: inline;
+  background-color: magenta;
+  filter: blur(100px);
+  border-radius: 99999px;
+  animation: movement2 infinite 50s;
+  top: 0;
+  left: 60vw;
+}
+
+#color-three {
+  opacity: 0.2;
+  width: 70vw;
+  height: 50vw;
+  position: absolute;
+  background-color: cyan;
+  display: inline;
+  filter: blur(100px);
+  border-radius: 99999px;
+  animation: movement3 infinite 100s;
+  top: 50vh;
+  left: 50vw;
+}
+
+.svgBox {
+  display:inline-block;
+  background-color: transparent;
 }

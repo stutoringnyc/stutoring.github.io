@@ -1,0 +1,22 @@
+/* logo.module.css */
+
+@keyframes grow {
+    0%   {
+        clip-path: polygon(50% 10%,50% 0,50% 0,50% 10%);
+    -webkit-clip-path: polygon(50% 10%,50% 0,50% 0,50% 10%);
+    }
+    100% {
+        clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+    -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+    }
+}
+  
+.svg {
+    fill: rgb(29, 151, 252);
+    transform-origin: center;
+    justify-content: center;
+    animation: grow 1s;
+    width: 5rem; 
+    height: 5rem;
+    opacity: 0.4;
+}
